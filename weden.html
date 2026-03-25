@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Kiều Hưng Store</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<!-- POPUP CHI TIẾT -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">×</span>
+
+        <img id="main-img" class="main-img">
+
+        <div id="sub-imgs" class="sub-imgs"></div>
+
+        <h2 id="modal-name"></h2>
+        <p id="modal-price"></p>
+        <p id="modal-stock"></p>
+
+<button onclick="buyNow()" class="buy-btn">Mua ngay</button>
+    </div>
+</div>
+
+<body>
+
+<header>
+    <h1>📱 Kiều Hưng Store</h1>
+    <nav>
+        <a href="index.html">Trang chủ</a>
+        <a href="cart.html">🛒 (<span id="cart-count">0</span>)</a>
+        <a href="login.html" id="user-area">Đăng nhập</a>
+    </nav>
+</header>
+<!-- THANH TÌM KIẾM -->
+<div class="search-box">
+    <input 
+        type="text" 
+        id="search" 
+        placeholder="🔍 Tìm điện thoại Samsung..."
+    >
+</div>
+
+<!-- DANH SÁCH SẢN PHẨM -->
+<div id="product-list" class="grid"></div>
+
+<div class="banner">
+    🔥 Chuyên bán điện thoại Samsung Iphone chính hãng
+</div>
+
+<div class="grid" id="product-list"></div>
+
+<script src="data.js"></script>
+<script src="main.js"></script>
+<script src="auth.js"></script>
+
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- CỘT 1 -->
+        <div class="footer-col">
+            <h2>📱 Kiều Hưng Store</h2>
+            <p>Chuyên bán điện thoại Samsung Iphone chính hãng, giá tốt, bảo hành uy tín.</p>
+
+            <div class="social">
+                <a href="#">🌐</a>
+                <a href="#">📘</a>
+                <a href="#">🎵</a>
+                <a href="#">📸</a>
+            </div>
+        </div>
+
+        <!-- CỘT 2 -->
+        <div class="footer-col">
+            <h3>Điều hướng</h3>
+            <a href="index.html">Trang chủ</a>
+            <a href="cart.html">Giỏ hàng</a>
+            <a href="login.html">Đăng nhập</a>
+        </div>
+
+        <!-- CỘT 3 -->
+        <div class="footer-col">
+            <h3>Liên hệ</h3>
+            <p>📍 Việt Nam</p>
+            <p>📞 0364 282 214</p>
+            <p>📧 kieunguyenhung97@gmail.com</p>
+        </div>
+
+        <!-- CỘT 4 -->
+        <div class="footer-col">
+            <h3>Nhận tin khuyến mãi</h3>
+            <input type="email" placeholder="Nhập email...">
+            <button>Đăng ký</button>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Kiều Hưng | All Rights Reserved
+    </div>
+</footer>
+</body>
+</html>
